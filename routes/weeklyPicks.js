@@ -9,7 +9,7 @@ weeklyPicksRouter.route('/')
     WeeklyPick.find()
     .then(weeklyPicks => {
         res.statusCode = 200;
-        res.setHeader('Content-Type', 'applcation/json');
+        res.setHeader('Content-Type', 'application/json');
         res.json(weeklyPicks);
     })
     .catch(err => next(err));
@@ -19,7 +19,7 @@ weeklyPicksRouter.route('/')
     .then(weeklyPicks => {
         console.log(`WeeklyPick Created: ${weeklyPicks}`);
         res.statusCode = 200;
-        res.setHeader('Content-Type', 'applcation/json');
+        res.setHeader('Content-Type', 'application/json');
         res.json(weeklyPicks);
     })
     .catch(err => next(err));
